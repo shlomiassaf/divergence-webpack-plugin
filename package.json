@@ -1,0 +1,17 @@
+{
+  "name": "divergence-webpack-plugin",
+  "version": "0.1.0-alpha.1",
+  "description": "Build fine tuned divergent applications using Webpack ",
+  "main": "DivergencePlugin.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.12.8"
+  }
+}

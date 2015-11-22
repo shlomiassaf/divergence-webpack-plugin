@@ -1,0 +1,12 @@
+{
+  "name": "divergence-webpack-plugin-typescript-example",
+  "version": "0.0.1",
+  "devDependencies": {
+    "css-loader": "^0.23.0",
+    "fs-extra": "^0.26.2",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.0",
+    "ts-loader": "^0.7.1",
+    "typescript": "^1.6.2"
+  }
+}
