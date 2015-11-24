@@ -1,8 +1,17 @@
-var path = require('path');
+var WebpackDevServer = require("webpack-dev-server");
+var webpack = require("webpack");
+var webpackConfig = require('./webpack.config.js');
 
-require('child_process').exec("npm config get prefix", function(err, stdout, stderr) {
-    var nixLib = (process.platform.indexOf("win") === 0) ? "" : "lib"; // win/*nix support
+webpackConfig.plugins.unshift(new webpack.HotModuleReplacementPlugin());
 
-    var webpackPath = path.resolve(path.join(stdout.replace("\n", ""), nixLib, 'node_modules', 'webpack', 'bin', 'webpack.js'));
-    require(webpackPath);
+var compiler = webpack(webpackConfig);
+var server = new WebpackDevServer(compiler, {
+    devtool: "source-map",
+    contentBase: "./app",
+    publicPath: "/",
+    hot: true,
+    inline: true,
+    progress: true,
+    colors: true
 });
+server.listen(8000);
