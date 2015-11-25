@@ -1,5 +1,3 @@
-import Component = require('./component/component');
-
 
 let divergetLabel = "mobile";
 if (location.search.indexOf("divergent=desktop") > 0)
