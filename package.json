@@ -1,6 +1,6 @@
 {
   "name": "divergence-webpack-plugin",
-  "version": "0.1.0-alpha.4",
+  "version": "0.1.0-alpha.5",
   "description": "Build fine tuned divergent applications using Webpack ",
   "main": "DivergencePlugin.js",
   "directories": {
@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "shelljs": "^0.5.3",
     "webpack": "^1.12.8"
   }
 }
