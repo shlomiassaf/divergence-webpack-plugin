@@ -154,4 +154,4 @@ DWP provides several runtime resolving strategies set through the options object
 A collection of divergent files with the same divergent label are actually a different version of your application, in Webpack terms it is a async chunk.  
 For example, __Desktop__ & __Mobile__ divergent labels.
 
-
+# TO BE CONTINUED ...
